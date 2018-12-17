@@ -2,12 +2,6 @@
 //! A macro to generate getters and setters on structs which represent an array of bytes
 
 extern crate paste;
-#[allow(unused_imports)]
-#[macro_use]
-extern crate enum_primitive_derive;
-extern crate num_traits;
-#[allow(unused_imports)]
-use num_traits::FromPrimitive;
 
 #[allow(dead_code)]
 fn set_bit_range(b: &mut u8, lsb: u8, msb: u8, value: u8) {
@@ -110,6 +104,10 @@ macro_rules! u8bits {
 }
 
 #[cfg(test)]
+//#[macro_use]
+//extern crate enum_primitive_derive;
+//extern crate num_traits;
+//use num_traits::FromPrimitive;
 mod tests {
     #[test]
     fn it_works() {
