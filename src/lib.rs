@@ -69,6 +69,8 @@ pub fn get_bit(b: &u8, pos: u8) -> bool {
 ///
 /// So a typical declaration might look like:  
 /// ```rust
+/// use u8bits::u8bits;
+///
 /// struct Bytes( [u8;2]);
 /// impl Bytes {
 ///    u8bits! {
